@@ -6,14 +6,14 @@
 
 :root {
     
-  --background: #1e1e2f;           /* Dark navy blue */
-  --secondaryBackground: #2c2c44;  /* Slightly lighter navy */
-  --text: #e0e0f0;                 /* Soft off-white */
-  --purple: #8a79ff;               /* Muted purple */
-  --teal: #ff00ff;                 /* Calm teal */
-  --placeholder: #a0a0b8;          /* Subtle grayish-blue */
-  --buttonHover: #7368e0;          /* Darker purple for hover */
-  --buttonActive: #5a4fc0;         /* Even darker purple for active */
+  --background: #1e1e2f;           
+  --secondaryBackground: #2c2c44;  
+  --text: #e0e0f0;                 
+  --purple: #8a79ff;               
+  --teal: #ff00ff;                 
+  --placeholder: #a0a0b8;          
+  --buttonHover: #7368e0;          
+  --buttonActive: #5a4fc0;         
 }
 
 body{
