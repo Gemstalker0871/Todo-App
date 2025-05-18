@@ -10,7 +10,7 @@
   --secondaryBackground: #2c2c44;  
   --text: #e0e0f0;                 
   --purple: #8a79ff;               
-  --teal: #ff00ff;                 
+  --pink: #ff00ff;                 
   --placeholder: #a0a0b8;          
   --buttonHover: #7368e0;          
   --buttonActive: #5a4fc0;         
@@ -59,7 +59,7 @@ body{
 #progressBar{
     width:100%;
     height: 10px;
-    background: var(--secondaryBackground);
+    background: var(--background);
     border-radius: 5px;
     margin-top: 20px;
 }
@@ -71,7 +71,7 @@ body{
 #progress{
     width: 0%;
     height: 10px;
-    background-color: var(--teal);
+    background-color: var(--pink);
     border-radius: 10px;
     transition: all 0.3s ease;
 }
@@ -172,5 +172,5 @@ button:active{
 
 .completed p {
     text-decoration: line-through;
-    color: var(--teal);
+    color: var(--pink);
 }
