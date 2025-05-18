@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    
+  --background: #1e1e2f;           /* Dark navy blue */
+  --secondaryBackground: #2c2c44;  /* Slightly lighter navy */
+  --text: #e0e0f0;                 /* Soft off-white */
+  --purple: #8a79ff;               /* Muted purple */
+  --teal: #ff00ff;                 /* Calm teal */
+  --placeholder: #a0a0b8;          /* Subtle grayish-blue */
+  --buttonHover: #7368e0;          /* Darker purple for hover */
+  --buttonActive: #5a4fc0;         /* Even darker purple for active */
+}
+
+body{
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 20px;      
+    background-color: var(--secondaryBackground);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 120px auto 0 auto;
+    max-width: 600px;
+}
+
+.stats{
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid var(--purple);
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#numbers{
+    width: 100px;
+    height:100px;
+    background: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#progressBar{
+    width:100%;
+    height: 10px;
+    background: var(--secondaryBackground);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.details{
+    width: 100%;
+}
+
+#progress{
+    width: 0%;
+    height: 10px;
+    background-color: var(--teal);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+input{
+    flex: 1;
+    padding: 16px;
+    background-color: var(--secondaryBackground);
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    color: var(--text);
+    outline: none;
+}
+
+input::placeholder {
+  color: var(--placeholder);  /* Your desired placeholder color */
+  opacity: 1;      /* Optional: makes sure the color is fully opaque */
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple);
+    border: none;
+    color: var(--text);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--buttonHover);
+}
+
+button:active{
+    background-color: var(--buttonActive);
+}
+
+.taskItem{
+    display: flex;
+    background-color: var(--secondaryBackground);
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+.taskItem img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.taskItem img:hover{
+    transform: scale(1.2);
+    filter: brightness(1.3);
+}
+
+.taskItem img:active {
+    transform: scale(0.9);
+    filter: brightness(0.9);
+}
+
+
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.task input{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.completed p {
+    text-decoration: line-through;
+    color: var(--teal);
+}
